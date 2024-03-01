@@ -1,0 +1,208 @@
+/* All CSS styles go here */
+
+.topnav {
+  background-color: #19120B;
+  overflow: hidden;
+}
+
+.logo {font-family: carol-gothic,sans-serif;
+font-weight: 400;
+font-style: normal; font-size:45px; color: white;text-align: center;}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 160px;
+  text-decoration: none;
+  font-family: farmhand-sans-inline,sans-serif;
+font-weight: 400;
+font-style: normal; font-size: 30px;
+}
+
+.topnav a:hover {
+  ;
+}
+
+  .topnav a.active {
+  background-color: #cf1b00;
+  color: white;
+}
+
+
+
+
+*{box-sizing: border-box; -webkit-box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; font: 16px/1.3 sans-serif; }
+
+/*
+PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+http://stackoverflow.com/a/34696029/383904
+*/
+
+.CSSgal {
+  position: relative;
+  overflow: hidden;
+  height: 70%; /* Or set a fixed height */
+}
+
+/* SLIDER */
+
+.CSSgal .slider {
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+  font-size: 1rem;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+  background: none 50% no-repeat;
+  background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+  height: 0;
+}
+
+.CSSgal .prevNext > div+div {
+  visibility: hidden; /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+  background: #fff;
+  position: absolute;
+  width:       60px;
+  height:      60px;
+  line-height: 60px; /* If you want to place numbers */
+  text-align: center;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+.CSSgal .prevNext a:hover {
+  opacity: 1;
+}
+.CSSgal .prevNext a+a {
+  left: auto;
+  right: 0; position:
+}
+
+/* NAVIGATION */
+
+
+
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER!
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal{
+  color: #fff;
+  text-align: center;font-family: farmhand-sans,sans-serif;
+font-weight: 400;
+font-style: normal; letter-spacing: .7rem;
+}
+.CSSgal .slider h2 {
+  margin-top: 40vh;
+  font-weight: 200;
+  letter-spacing: -0.06em;
+  word-spacing: 0.2em;
+  font-size: 3em;
+}
+.CSSgal a {
+  border-radius: 50%;
+  margin: 0 3px;
+  color: rgba(0,0,0,0.8);
+  text-decoration: none;
+}
+.nogap {margin: 0; padding: 0}
+
+
+a:link {
+     text-decoration: none;
+}
+
+a:hover {
+      text-decoration:#ffffff
+}
+.foodpaper{background-image: url("../images/backgroundfood.svg");height: 1040px}
+
+
+.centerHeaders {color:white;font-family: farmhand-sans,sans-serif;
+font-weight: 400;
+font-style: normal; color:white; font-size: 40px; position: relative; left: 600px;}
+
+
+
+
+.box3 {
+width: 1600px;
+height: 550px;
+border: 2px solid #E9DBB6;
+margin-left: 40px;
+padding: 70px; align:center;
+
+}
+
+.takenbake{color:#E9DBB6;text-align: center;}
+
+
+
+.fontpizza {font-family: farmhand-sans,sans-serif;
+font-weight: 400;
+font-style: normal; color:white; font-size: 30px}
+
+.container {
+	  display: grid;
+	  grid-template-columns: 250px 250px 250px;
+	  text-align: center;padding-top: 4em; margin-left: 105px;
+
+	}
+	.column {
+	  padding: 16px;
+	  height: 250px;
+	  margin: 9px;
+	  color: #E9DBB6;border: 2px solid #E9DBB6
+	}
+h2 {font-family: farmhand-sans,sans-serif;
+font-weight: 400;
+font-style: normal; color:white}
